@@ -1,0 +1,66 @@
+.App{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+}
+
+[tooltip]{
+    &::before{
+        position: absolute;
+        z-index: 99;
+        transform: translateY(-3em);
+        background-color: #f4f4f4;
+        color: #1e272e;
+        content: attr(tooltip);
+        border-radius: 0.5rem;
+        margin-right: 0.5rem;
+        padding: 0.5rem;
+        opacity: 0;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+
+    &:hover::before{
+        opacity: 1;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+
+}
+
+@media (max-width: 1499px){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1500px){
+    html{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1700px){
+    html{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 2000px){
+    html{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 2500px){
+    html{
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 3000px){
+    html{
+        font-size: 48px;
+    }
+}

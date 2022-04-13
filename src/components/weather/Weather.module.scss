@@ -1,0 +1,115 @@
+.container{
+    grid-column: span 1;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #f4f4f4;
+    color: #1e272e;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.currentForecast{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    img {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+.tempNumber{
+    font-size: 3rem;
+    margin: 0px;
+}
+
+.unitSwitch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.spacer{
+    border-left: solid 0.125rem #1e272e;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+    height: 1.25rem;
+}
+
+.tempUnit{
+    font-size: 2rem;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.conditions{
+    color:#808e9b;
+    
+    p{
+        margin: 0.25rem;
+    }
+}
+
+.windDirection{
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    h1{
+        margin: 0px;
+    }
+
+    p{
+        color: #808e9b;
+        margin: 0px;
+    }
+}
+
+.weatherTabs{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        color: #808e9b;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        transition: 0.5s;
+    }
+}
+
+.weatherGraph{
+    box-sizing: border-box;
+    padding-top: 1rem;
+    width: 100%;
+}
+

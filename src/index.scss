@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  font-family: 'Barlow',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #4bcffa;
+  height: 100%;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("./fonts/Barlow-Medium.ttf");
+}
